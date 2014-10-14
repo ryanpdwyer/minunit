@@ -5,6 +5,8 @@ compiler:
     - clang
 
 before_script:
+    - sudo apt-get update
+    - sudo apt-get upgrade
     - make all
 
 script:
