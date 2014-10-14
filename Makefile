@@ -18,7 +18,7 @@ all: minunit.h
 	$(CC) $(CFLAGS) minunit_example.c -o minunit_example $(LDLIBS)
 
 test:
-	./minunit_example
-
+	./minunit_example \
+	exit $$?
 clean:
 	rm minunit_example
