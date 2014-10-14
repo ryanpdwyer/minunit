@@ -1,0 +1,11 @@
+langauge: c
+
+compiler:
+    - cc
+    - clang
+
+before_script:
+    - make all
+
+script:
+    - make test

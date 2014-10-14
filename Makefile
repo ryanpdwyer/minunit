@@ -1,5 +1,7 @@
 LDLIBS=-lm
 
+UNAME := $(shell uname)
+
 ifeq ($(UNAME), Linux)
 LDLIBS += -lrt
 endif
